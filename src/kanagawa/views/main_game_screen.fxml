@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kanagawa.views.MainGameController">
+   <children>
+      <AnchorPane prefHeight="904.0" prefWidth="350.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="currentPlayerUsername" alignment="CENTER" layoutX="66.0" layoutY="14.0" text="Oui" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="14.0">
+               <font>
+                  <Font name="Verdana" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="24.0" layoutY="243.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/math.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="143.0" layoutY="69.0" prefHeight="16.0" prefWidth="84.0" text="Inventaire" AnchorPane.leftAnchor="142.0" AnchorPane.rightAnchor="123.0" AnchorPane.topAnchor="69.0">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="24.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/energy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="24.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/info.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="24.0" layoutY="613.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/language.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="24.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/management.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="24.0" layoutY="506.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/mechanics.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="24.0" layoutY="453.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/ergo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="24.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/industry.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="97.0" layoutY="256.0" text="Maths" />
+            <Label layoutX="97.0" layoutY="308.0" text="Informatique" />
+            <Label layoutX="97.0" layoutY="363.0" text="Energie" />
+            <Label layoutX="97.0" layoutY="415.0" text="Industrie" />
+            <Label layoutX="97.0" layoutY="466.0" text="Ergonomie" />
+            <Label layoutX="97.0" layoutY="519.0" text="Mécanique" />
+            <Label layoutX="97.0" layoutY="572.0" text="Management" />
+            <Label layoutX="97.0" layoutY="626.0" text="Langues" />
+            <Label fx:id="penCount" layoutX="296.0" layoutY="252.0" text="0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="163.0">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="managementCount" layoutX="296.0" layoutY="622.0" text="0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="569.0">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="industryCount" layoutX="296.0" layoutY="568.0" text="0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="414.0">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="languageCount" layoutX="296.0" layoutY="622.0" text="0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="622.0">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="mechaCount" layoutX="293.0" layoutY="515.0" text="0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="515.0">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="energyCount" layoutX="296.0" layoutY="411.0" text="0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="360.0">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="infoCount" layoutX="296.0" layoutY="359.0" text="0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="305.0">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="mathCount" layoutX="296.0" layoutY="304.0" text="0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="253.0">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="97.0" layoutY="676.0" text="Diplomes disponibles">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="24.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/credit.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="97.0" layoutY="115.0" text="Crédits" />
+            <Label fx:id="creditCount" layoutX="296.0" layoutY="112.0" prefHeight="25.0" prefWidth="15.0" text="0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="112.0">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="24.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/pen.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="100.0" layoutY="166.0" text="Stylos" />
+            <Label fx:id="ergoCount" layoutX="289.0" layoutY="462.0" text="0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="462.0">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="136.0" layoutY="205.0" text="Compétences">
+               <font>
+                  <Font name="Verdana Bold" size="13.0" />
+               </font>
+            </Label>
+            <VBox fx:id="availableDiplomasList" layoutX="15.0" layoutY="705.0" prefHeight="372.0" prefWidth="319.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="705.0">
+               <children>
+                  <AnchorPane prefHeight="57.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <children>
+                        <JFXButton layoutX="233.0" layoutY="13.0" prefHeight="32.0" prefWidth="30.0" style="-fx-background-color: #ffbe76;" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="277.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/check.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton layoutX="273.0" layoutY="13.0" prefHeight="32.0" prefWidth="30.0" style="-fx-background-color: #6ab04c;" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="237.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@assets/hourglass.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+
+
+                        <ImageView fitHeight="25.0" fitWidth="21.0" layoutX="76.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/credit.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="62.0" layoutY="19.0" text="6" />
+                        <ImageView fitHeight="33.0" fitWidth="31.0" layoutX="16.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/info.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="57.0" prefWidth="317.0" style="-fx-background-color: white; -fx-border-color: black;">
+                     <children>
+                        <JFXButton layoutX="233.0" layoutY="13.0" prefHeight="32.0" prefWidth="30.0" style="-fx-background-color: #ffbe76;" text=" " />
+                        <JFXButton layoutX="273.0" layoutY="13.0" prefHeight="32.0" prefWidth="30.0" style="-fx-background-color: #6ab04c;" text=" " />
+                        <ImageView fitHeight="22.0" fitWidth="23.0" layoutX="277.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/check.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="237.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/hourglass.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="21.0" layoutX="76.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/credit.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="62.0" layoutY="19.0" text="3" />
+                        <ImageView fitHeight="33.0" fitWidth="31.0" layoutX="16.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@assets/energy.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="391.0" maxWidth="1314.0" prefHeight="685.0" prefWidth="1101.0" AnchorPane.leftAnchor="391.0" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <GridPane layoutX="29.0" layoutY="11.0" prefHeight="682.0" prefWidth="1185.0" style="-fx-grid-lines-visible: true; -fx-background-color: lightblue;" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="11.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="40.0" minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane fx:id="one" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                  <AnchorPane fx:id="two" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <AnchorPane fx:id="three" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <AnchorPane fx:id="four" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <AnchorPane fx:id="five" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+                  <AnchorPane fx:id="six" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <AnchorPane fx:id="seven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <AnchorPane fx:id="eight" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <AnchorPane fx:id="nine" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                  <AnchorPane fx:id="ten" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <AnchorPane fx:id="eleven" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <AnchorPane fx:id="twelve" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <JFXButton fx:id="firstColumnButton" layoutX="128.0" layoutY="4.0" onMouseClicked="#onFirstColumnButtonClicked" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: lightgreen;" text="Prendre" AnchorPane.rightAnchor="127.0" AnchorPane.topAnchor="4.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1">
+                     <children>
+                        <JFXButton fx:id="secondColumnButton" layoutX="128.0" layoutY="4.0" onMouseClicked="#onSecondColumnButtonClicked" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: lightgreen;" text="Prendre" AnchorPane.rightAnchor="127.0" AnchorPane.topAnchor="4.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="2">
+                     <children>
+                        <JFXButton fx:id="thirdColumnButton" layoutX="127.0" layoutY="4.0" onMouseClicked="#onThirdColumnButtonClicked" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: lightgreen;" text="Prendre" AnchorPane.rightAnchor="127.0" AnchorPane.topAnchor="4.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="3">
+                     <children>
+                        <JFXButton fx:id="fourthColumnButton" layoutX="127.0" layoutY="4.0" onMouseClicked="#onFourthColumnButtonClicked" prefHeight="33.0" prefWidth="65.0" style="-fx-background-color: lightgreen;" text="Prendre" AnchorPane.rightAnchor="127.0" AnchorPane.topAnchor="4.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <VBox fx:id="playersList" layoutX="1719.0" layoutY="52.0" prefHeight="583.0" prefWidth="201.0" style="-fx-border-color: black;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0" />
+      <ScrollPane layoutX="391.0" layoutY="715.0" prefHeight="365.0" prefWidth="1262.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="391.0" AnchorPane.rightAnchor="267.0" AnchorPane.topAnchor="662.0">
+         <content>
+            <HBox fx:id="cardsList" prefHeight="407.0" prefWidth="1261.0" />
+         </content>
+      </ScrollPane>
+      <JFXButton fx:id="nextPlayerButton" layoutX="1736.0" layoutY="668.0" onMouseClicked="#onNextPlayerButtonClicked" prefHeight="64.0" prefWidth="114.0" style="-fx-background-color: #48dbfb;" text="Prochain Joueur" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="668.0" />
+      <JFXButton fx:id="quitGameButton" layoutX="1744.0" layoutY="761.0" onMouseClicked="#onQuitGameButtonClicked" prefHeight="64.0" prefWidth="98.0" style="-fx-background-color: #00d2d3;" text="Quitter le jeu" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="761.0" />
+      <Label fx:id="roundCountLabel" layoutX="1751.0" layoutY="14.0" text="Tour n°1" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Verdana Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

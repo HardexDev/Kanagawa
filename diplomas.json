@@ -1,0 +1,312 @@
+[
+  {
+    "groupeName": "INFO",
+    "diplomas": [
+      {
+        "UVArray": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "skillArray": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "credits": 3
+      },
+      {
+        "UVArray": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "skillArray": [
+          1,
+          3,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "credits": 6
+      },
+      {
+        "UVArray": [
+          2,
+          3,
+          2,
+          1
+        ],
+        "skillArray": [
+          1,
+          4,
+          0,
+          0,
+          0,
+          0,
+          2,
+          1
+        ],
+        "credits": 9
+      }
+    ]
+  },
+  {
+    "groupeName": "ENERGY",
+    "diplomas": [
+      {
+        "UVArray": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "skillArray": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "credits": 3
+      },
+      {
+        "UVArray": [
+          2,
+          2,
+          1,
+          1
+        ],
+        "skillArray": [
+          1,
+          0,
+          3,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "credits": 6
+      },
+      {
+        "UVArray": [
+          3,
+          2,
+          1,
+          2
+        ],
+        "skillArray": [
+          1,
+          0,
+          4,
+          0,
+          0,
+          0,
+          1,
+          2
+        ],
+        "credits": 9
+      }
+    ]
+  },
+  {
+    "groupeName": "ERGO",
+    "diplomas": [
+      {
+        "UVArray": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "skillArray": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "credits": 3
+      },
+      {
+        "UVArray": [
+          1,
+          3,
+          1,
+          1
+        ],
+        "skillArray": [
+          1,
+          0,
+          0,
+          3,
+          0,
+          0,
+          1,
+          1
+        ],
+        "credits": 6
+      },
+      {
+        "UVArray": [
+          2,
+          4,
+          1,
+          2
+        ],
+        "skillArray": [
+          1,
+          0,
+          0,
+          4,
+          0,
+          0,
+          2,
+          2
+        ],
+        "credits": 11
+      }
+    ]
+  },
+  {
+    "groupeName": "MECHANICS",
+    "diplomas": [
+      {
+        "UVArray": [
+          2,
+          1,
+          0,
+          0
+        ],
+        "skillArray": [
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        "credits": 5
+      },
+      {
+        "UVArray": [
+          3,
+          1,
+          1,
+          1
+        ],
+        "skillArray": [
+          1,
+          0,
+          0,
+          0,
+          3,
+          0,
+          1,
+          1
+        ],
+        "credits": 7
+      },
+      {
+        "UVArray": [
+          4,
+          2,
+          2,
+          1
+        ],
+        "skillArray": [
+          2,
+          0,
+          0,
+          0,
+          4,
+          0,
+          2,
+          1
+        ],
+        "credits": 11
+      }
+    ]
+  },
+  {
+    "groupeName": "INDUSTRY",
+    "diplomas": [
+      {
+        "UVArray": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "skillArray": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "credits": 3
+      },
+      {
+        "UVArray": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "skillArray": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          1,
+          1
+        ],
+        "credits": 6
+      },
+      {
+        "UVArray": [
+          2,
+          3,
+          1,
+          2
+        ],
+        "skillArray": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          4,
+          1,
+          2
+        ],
+        "credits": 9
+      }
+    ]
+  }
+]
